@@ -1,26 +1,26 @@
 export interface Item {
-    id:String;
-    item:String;
+    id:string;
+    item:string;
     checked:boolean;
 }
 
 export default class ListItem implements Item {
    
     constructor(
-        private _id:String = '',
-        private _item:String = '',
+        private _id:string = '',
+        private _item:string = '',
         private _checked:boolean = false,
     ){}
-    get id():String {
+    get id():string {
         return this._id;
     }
-    set id(id:String) {
+    set id(id:string) {
         this._id = id;
     }
-    get item():String {
+    get item():string {
         return this._item;
     }
-    set item(item:String) {
+    set item(item:string) {
         this._item = item;
     }
     get checked():boolean {

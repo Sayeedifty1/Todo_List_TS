@@ -6,7 +6,7 @@ interface List {
     save(): void,
     clearList(): void,
     addItem(itemObj: ListItem): void,
-    removeItem(id: String): void,
+    removeItem(id: string): void,
 }
 
 export default class FullList implements List {
@@ -43,10 +43,8 @@ export default class FullList implements List {
         this.save();
     }
 
-    removeItem(id: String): void {
+    removeItem(id: string): void {
         this._list = this._list.filter(item => item.id !== id);
         this.save();
     }
-} addItem(newListItem: ListItem) {
-    throw new Error("Method not implemented.");
-}
+} 
